@@ -54,24 +54,12 @@
           </div>
         </div>
       </section>
-      <section class="current-weather">
+      <section class="py-5 bg-secondary">
         <div class="container">
           <h2 class="text-center">Vremea curenta</h2>
-          <div class="d-flex justify-content-evenly">
-            <div class="px-3">
-              <div class="fs-2 mb-2"><strong>Timisoara</strong></div>
-              <div class="f2-3"><strong>Marti</strong>, 19:54</div>
-              <div class="d-flex align-items-center justify-content-center">
-                <strong class="fs-1">10°C</strong>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-              </div>
-            </div>
-            <div class="px-3">
-              <p class="fs-5">Se simte ca <strong>8°C</strong></p>
-              <p class="fs-5">Putin inorat</p>
-              <p class="fs-5">Viteza vantului: <strong>15 km/h</strong></p>
-            </div>
-          </div>
+          <div
+            class="current-weather d-flex justify-content-evenly align-items-center"
+          ></div>
         </div>
       </section>
     </main>
@@ -90,6 +78,9 @@
 
     <script src="services/utils.js"></script>
     <script src="services/weatherService.js"></script>
+    <script src="utils/date.js"></script>
+    <script src="utils/weather.js"></script>
+    <script src="sections/CurrentWeather.js"></script>
 
     <script src="index.js"></script>
   </body>
