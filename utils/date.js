@@ -21,11 +21,17 @@ function getDayOfTheWeek(utc) {
     }
 }
 
-function getHour(utc) {
+function numberWithZero(nr) {
+    if (nr < 10) {
+        return `0${nr}`
+    }
+    return nr;
+}
 
+function getHour(utc) {
     // pornind de la unix date, inmultim cu 1000 pentru a crea data
     const date = new Date(utc * 1000);
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
+    const hours = numberWithZero(date.getHours());
+    const minutes = numberWithZero(date.getMinutes());
     return `${hours}:${minutes}`
 }
