@@ -21,11 +21,11 @@
   <body>
     <header class="bg-primary d-flex align-items-center justify-content-center">
       <div class="container">
-        <h1 class="text-primary text-center">Weather App</h1>
+        <h1 class="text-light text-center">Weather App</h1>
       </div>
     </header>
     <main>
-      <section class="choose-location py-5">
+      <section class="py-5 choose-location">
         <div class="container">
           <h2 class="text-primary text-center">Alege-ti Locatia</h2>
           <p class="text-center">
@@ -74,6 +74,13 @@
           ></div>
         </div>
       </section>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center">Prognoza pe 5 zile</h2>
+          <div class="weather-forecast">
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-dark">
       <div class="container">
@@ -106,6 +113,7 @@
     <script src="sections/ChooseLocation.js"></script>
     <script src="sections/CurrentWeather.js"></script>
     <script src="sections/ScrollToTop.js"></script>
+    <script src="sections/WeatherForecast.js"></script>
 
     <script src="index.js"></script>
   </body>

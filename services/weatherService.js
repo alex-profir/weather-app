@@ -16,3 +16,7 @@ function getCurrentWeather(city) {
     // Construim linkul (endpointul) catre cererea de current weather, folosind informatiile predefinite 
     return fetchAndParse(`${API_URL}/weather?q=${city}&${DEFAULT_QUERY_PARAMETERS}`);
 }
+
+function getForecast(city) {
+    return fetchAndParse(`${API_URL}/forecast?q=${city}&${DEFAULT_QUERY_PARAMETERS}`);
+}

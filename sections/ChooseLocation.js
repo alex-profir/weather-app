@@ -18,6 +18,7 @@ function updateWeather(city) {
     localStorage.setItem("city", city);
     updateCurrentCity(city);
     displayCurrentWeather(city);
+    displayWeatherForecast(city);
 }
 
 // Adaugam evenimtente de "click" pentru fiecare element din dropdown
